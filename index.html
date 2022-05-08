@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slick Playground</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./slick/scss/main.css" />
+    <!-- <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .slider {
+        width: 100%;
+        margin: 100px auto;
+      }
+
+      /* .slick-slide {
+        margin: 0px 20px;
+      } */
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+      .slick-slide {
+        transition: all ease-in-out 0.3s;
+        opacity: 0.2;
+      }
+
+      .slick-active {
+        opacity: 0.5;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+    </style> -->
+  </head>
+  <body>
+    <section class="section review__section">
+      <div class="container">
+        <h2 class="review__title">Feedback from graduates</h2>
+        <!-- slider for -->
+        <div class="slider-for">
+          <div class="slider__item">
+            <article class="card">
+              <div class="card__group">
+                <picture>
+                  <img
+                    class="card_img"
+                    src="./slick/img/big_slider.png"
+                    alt="avatar"
+                    width="90"
+                    height="90"
+                  />
+                </picture>
+                <a class="card__link" href="#"
+                  ><span class="card__icon"></span
+                ></a>
+              </div>
+              <div class="card__meta">
+                <h3 class="card__name">Tonya Kucherovskaya</h3>
+                <p class="card__desc">
+                  Graduated from 2015, National University of Bioresources and
+                  natural history of Ukraine
+                </p>
+                <p class="card__text">
+                  In a short time with Elena, I mastered grammar and replenished
+                  my completely empty vocabulary. From the first lesson I
+                  realized that I was on my plate. Elena and I became friends
+                  because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to
+                  make the slightest mistake. Now I can brag that I'm student
+                  ...
+                  <a class="card__text-link" href="">Read more</a>
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="slider__item">
+            <picture>
+              <img
+                class="card_img"
+                src="./slick/img/small_slider2.png"
+                alt="avatar"
+                width="90"
+                height="90"
+              />
+            </picture>
+            <a class="card__link" href="#"><span class="card__icon"></span></a>
+            <h3 class="card__name">Tonya Kucherovskaya</h3>
+            <p class="card__desc">
+              Graduated from 2015, National University of Bioresources and
+              natural history of Ukraine
+            </p>
+            <p class="card__text">
+              In a short time with Elena, I mastered grammar and replenished my
+              completely empty vocabulary. From the first lesson I realized that
+              I was on my plate. Elena and I became friends because she was
+              really worried about my success. She became an authority for me,
+              but I did not tremble in class, fearing to make the slightest
+              mistake. Now I can brag that I'm student ...
+              <a class="card__text-link" href="">Read more</a>
+            </p>
+          </div>
+
+          <div class="slider__item">
+            <picture>
+              <img
+                class="card_img"
+                src="./slick/img/small_slider3.png"
+                alt="avatar"
+                width="90"
+                height="90"
+              />
+            </picture>
+            <a class="card__link" href="#"><span class="card__icon"></span></a>
+            <h3 class="card__name">Tonya Kucherovskaya</h3>
+            <p class="card__desc">
+              Graduated from 2015, National University of Bioresources and
+              natural history of Ukraine
+            </p>
+            <p class="card__text">
+              In a short time with Elena, I mastered grammar and replenished my
+              completely empty vocabulary. From the first lesson I realized that
+              I was on my plate. Elena and I became friends because she was
+              really worried about my success. She became an authority for me,
+              but I did not tremble in class, fearing to make the slightest
+              mistake. Now I can brag that I'm student ...
+              <a class="card__text-link" href="">Read more</a>
+            </p>
+          </div>
+        </div>
+        <!-- slider nav -->
+        <div class="slider-nav">
+          <div class="slider-nav__item">
+            <img
+              src="./slick/img/small_slider1.png"
+              alt=""
+              class="slider-nav__img"
+              width="54"
+              height="54"
+            />
+          </div>
+
+          <div class="slider-nav__item">
+            <div>
+              <img
+                src="./slick/img/small_slider2.png"
+                alt=""
+                class="slider-nav__img"
+                width="54"
+                height="54"
+              />
+            </div>
+          </div>
+
+          <div class="slider-nav__item">
+            <div class="">
+              <img
+                src="./slick/img/small_slider3.png"
+                alt=""
+                class="slider-nav__img"
+                width="54"
+                height="54"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      $(document).on("ready", function () {
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          fade: true,
+          asNavFor: ".slider-nav",
+        });
+        $(".slider-nav").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: ".slider-for",
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+        });
+      });
+    </script>
+  </body>
+</html>
