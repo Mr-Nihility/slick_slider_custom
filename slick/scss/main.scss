@@ -212,38 +212,40 @@ h2 {
   background-size: 100%;
 }
 
+/* Стрелка влево */
 .slider-nav .slick-prev {
   left: -50%;
 
   background-image: url(../img/arrow_1.svg);
 }
-.slick-arrow.slick-next {
-  right: -50%;
 
-  background-image: url(../img/arrow_2.svg);
-}
-/* Стрелка влево */
 .slider-for .slick-prev {
   left: -25px;
   background-image: url(../img/arrow_1.svg);
 }
 /* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: -50%;
+
+  background-image: url(../img/arrow_2.svg);
+}
+
 .slider-for .slick-next {
   right: -25px;
 
   background-image: url(../img/arrow_2.svg);
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
-}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled {
+// }
+// /* Точки (булиты) */
+// .slick-dots {
+// }
+// .slick-dots li {
+// }
+// /* Активная точка */
+// .slick-dots li.slick-active {
+// }
+// /* Элемент точки */
+// .slick-dots li button {
+// }
